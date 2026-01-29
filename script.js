@@ -17,3 +17,13 @@ boxes.forEach(box => {
     });
 });
 
+const cartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+cartButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        alert('Item added to cart!');
+    });
+});
+
+
