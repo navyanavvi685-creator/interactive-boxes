@@ -99,3 +99,39 @@ body {
     background-color: #eee;
 }
 
+/* Add to Cart Section */
+.cart-section {
+    margin-top: 14px;
+}
+
+.cart-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.shipping {
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(180deg, #2e8b57, #1f6f46);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    opacity: 0.9;
+}
