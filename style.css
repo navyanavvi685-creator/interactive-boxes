@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 420px;
+}
+
+/* Box styling */
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 0.3s ease;
+}
+
+.box:hover {
+    border-color: #333;
+}
+
+/* Header */
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.box-header h3 {
+    font-size: 16px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/* Expandable content */
+.box-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 16px;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+/* Active state */
+.box.active .box-content {
+    max-height: 200px; /* enough to show content */
+    padding: 16px;
+}
+
+/* Colors */
+.colors, .sizes {
+    margin-bottom: 12px;
+}
+
+.colors p, .sizes p {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.color {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+}
+
+.color.red { background-color: red; }
+.color.blue { background-color: blue; }
+.color.green { background-color: green; }
+
+/* Sizes */
+.sizes button {
+    padding: 6px 10px;
+    margin-right: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sizes button:hover {
+    background-color: #eee;
+}
+
